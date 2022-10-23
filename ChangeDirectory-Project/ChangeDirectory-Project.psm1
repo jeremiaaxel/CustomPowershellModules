@@ -33,7 +33,7 @@ function ChangeDirectory-Project() {
         }
     }
     
-    $basePath = "C:\Users\jerem\";
+    $basePath = "$($HOME)\";
     $result = "";
     $defaultKey = 'school';
     $keyToProjectMap = @{ 

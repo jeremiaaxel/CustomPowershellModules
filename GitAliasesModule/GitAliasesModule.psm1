@@ -14,7 +14,7 @@ function Git-Status() {
 Export-ModuleMember -Function Git-Status -Alias gst
 
 function Git-Commit() { 
-    [Alias('gcm')]
+    [Alias('gcmt')]
     param($params)
     git commit $params;
 }
