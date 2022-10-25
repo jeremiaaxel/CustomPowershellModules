@@ -4,19 +4,19 @@ Shortcut to some commonly used (by me of course) git commands.
 ## Git Commands
 | Alias   | Command         |
 |---------|-----------------|
-| `gcln`  | `git clone`     |
+| `gcl`   | `git clone`     |
 | `gst`   | `git status`    |
 | `ga`    | `git add`       |
 | `gaa`   | `git add .`     |
 | `gcmt`  | `git commit`    |
 | `gcmsg` | `git commit -m` |
 | `gpsh`  | `git push`      |
-| `gpll`  | `git pull`      |
+| `gpl`   | `git pull`      |
 | `gco`   | `git checkout`  |
 | `gb`    | `git branch`    |
 | `grst`  | `git restore`   |
 | `glog`  | `git log`       |
-| `gdiff` | `git diff`      |
+| `gdf`   | `git diff`      |
 
 ## Adding More
 Edit the GitAliasesModule.psm1; create  a new function block and the exports.\

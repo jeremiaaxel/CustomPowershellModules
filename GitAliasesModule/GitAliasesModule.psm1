@@ -1,91 +1,78 @@
 ### Git Aliases
 function Git-Clone() { 
-    [Alias('gcln')]
-    param($params)
-    git clone $params;
+    git clone $args;
 }
-Export-ModuleMember -Function Git-Clone -Alias gcln
+New-Alias -Name gcl -Value Git-Clone
+Export-ModuleMember -Function Git-Clone -Alias gcl
 
 function Git-Status() { 
-    [Alias('gst')]
-    param($params)
-    git status $params;
+    git status $args;
 }
+New-Alias -Name gst -Value Git-Status
 Export-ModuleMember -Function Git-Status -Alias gst
 
 function Git-Commit() { 
-    [Alias('gcmt')]
-    param($params)
-    git commit $params;
+    git commit $args;
 }
+New-Alias -Name gcmt -Value Git-Commit
 Export-ModuleMember -Function Git-Commit -Alias gcmt
 
 function Git-CommitMessage() { 
-    [Alias('gcmsg')]
-    param($params)
-    git commit -m $params;
+    git commit -m $args;
 }
+New-Alias -Name gcmsg -Value Git-CommitMessage
 Export-ModuleMember -Function Git-CommitMessage -Alias gcmsg
 
 function Git-Push() { 
-    [Alias('gpsh')]
-    param($params)
-    git push $params;
+    git push $args;
 }
+New-Alias -Name gpsh -Value Git-Push
 Export-ModuleMember -Function Git-Push -Alias gpsh
 
 function Git-Pull() { 
-    [Alias('gpll')]
-    param($params)
-    git pull $params;
+    git pull $args;
 }
-Export-ModuleMember -Function Git-Pull -Alias gpll
+New-Alias -Name gpl -Value Git-Pull
+Export-ModuleMember -Function Git-Pull -Alias gpl
 
 function Git-Checkout() { 
-    [Alias('gco')]
-    param($params)
-    git checkout $params;
+    git checkout $args;
 }
+New-Alias -Name gco -Value Git-Checkout
 Export-ModuleMember -Function Git-Checkout -Alias gco
 
 function Git-Branch() { 
-    [Alias('gb')]
-    param($params)
-    git branch $params;
+    git branch $args;
 }
+New-Alias -Name gb -Value Git-Branch
 Export-ModuleMember -Function Git-Branch -Alias gb
 
 function Git-Restore() { 
-    [Alias('grst')]
-    param($params)
-    git restore $params;
+    git restore $args;
 }
+New-Alias -Name grst -Value Git-Restore
 Export-ModuleMember -Function Git-Restore -Alias grst
 
 function Git-Log() { 
-    [Alias('glog')]
-    param($params)
-    git log $params;
+    git log $args;
 }
+New-Alias -Name glog -Value Git-Log
 Export-ModuleMember -Function Git-Log -Alias glog
 
 function Git-Add() { 
-    [Alias('ga')]
-    param($params)
-    git add $params;
+    git add $args;
 }
+New-Alias -Name ga -Value Git-Add
 Export-ModuleMember -Function Git-Add -Alias ga
 
 function Git-AddAll() { 
-    [Alias('gaa')]
-    param($params)
-    git add .;
+    git add . $args;
 }
+New-Alias -Name gaa -Value Git-AddAll
 Export-ModuleMember -Function Git-AddAll -Alias gaa
 
 function Git-Diff() { 
-    [Alias('gdiff')]
-    param($params)
-    git diff $params;
+    git diff $args;
 }
-Export-ModuleMember -Function Git-Diff -Alias gdiff
+New-Alias -Name gdf -Value Git-Diff
+Export-ModuleMember -Function Git-Diff -Alias gdf
