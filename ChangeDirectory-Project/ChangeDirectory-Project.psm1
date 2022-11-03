@@ -58,6 +58,6 @@ function ChangeDirectory-Project() {
         "Defaulting to $defaultKey";
     } 
     $result += ($keyToProjectMap[$target] ?? $keyToProjectMap[$defaultKey]);
-    cd $result;
+    Set-Location $result;
 }
 Export-ModuleMember -Function ChangeDirectory-Project -Alias cdprj
