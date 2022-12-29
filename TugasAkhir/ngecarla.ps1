@@ -8,17 +8,17 @@ function Ngecarla {
 
     # Duplicate tab
     $customScriptDir = "\PythonAPI\customs\";
-    Write-Host "Duplicating tab: Duplicate and move to $($customScriptDir)";
+    Write-Host -NoNewline "Duplicating tab: Duplicate and move to $($customScriptDir)...";
     DuplicateTab -childDir "$customScriptDir" -commands "conda activate tensorflow";
-    Write-Host "Duplicating tab: Done";
+    Write-Host "Done";
 
     # Maintain focus on the first tab
     ChangeFocusTab;
 
     # Open code
-    Write-Host "Opening VSCode";
+    Write-Host -NoNewline "Opening VSCode...";
     OpenCode;
-    Write-Host "Opening VSCode: Done";
+    Write-Host "Done";
 
     Write-Host "Ngecarla: Done";
 }
